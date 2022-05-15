@@ -1,0 +1,79 @@
+<body>
+    <!-- create a navigation bar-->
+    <div class="topheader">
+        <h1>Prathm</h1>
+        <p>"The key to sucess is to build a home for your own Goals." Quote by Darien Marble</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">Aboutme</a>
+        <a href="projectPortfoilo.html">portfolio</a>
+        <a href="resume.html">Resumet</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Resume</h2>
+            <h5>PrathamResume</h5>
+            <div class="img" style= "width:200px; height:200px;">
+              <img src="img/resume.png" alt="resume">
+            </div>
+            <p>This is my Resume</p>
+            <p>this is what I have done in school and outside of school for the past few years.</p>
+          </div>
+          <div class="card">
+            <h2>Portfolio</h2>
+            <h5>this is my Portfolio for each of my website</h5>
+            <div class="img">
+             <img class="SlideShow" src="img/chrono.png">
+              <img class="SlideShow" src="img/JavaScream.png">
+              <img class="SlideShow" src="img/MaxSteelFanMade.png">
+              <script>
+                var myIndex = 0;
+                carousel();
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("SlideShow");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {
+                    myIndex = 1;
+                  }
+                  x[myIndex - 1].style.display = "block";
+                  setTimeout(carousel, 2000);
+                }
+              </script>
+            </div> 
+            <a href="https://chronoexpedition.netlify.app/" class="button" target="_blank" title="chronoshift expedition">Chronoshift expedition project</a>
+            <a href="https://replit.com/@L2KontrollFreak/javascript-practice#index.html" target="_blank">JavaScream</a>
+            <a href="https://maxsteelfanmade.netlify.app/" target="_blank">Maxsteelfanmade</a>
+            <p> this are all my projects that are listed</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <a href="https://express.adobe.com/page/AkdAK6B14OfZz/"><img src="img/20170429_144645.jpg" alt="Family" style="width: 60%; height: 70%"></a>
+            <p>This is my about me</p>
+          </div>
+          <div class="card">
+            <h3>Contact</h3>
+            <div class="img"><a href = "mailto: damarble2005@gmail.com"><img src="img/Gmail_icon_(2020).svg.png" alt="Email" style="width:auto; height: 50px;;"></a>
+            </div>
+            <div>
+           <a href="https://www.linkedin.com/in/darienmarble/"><img src="img/linkedIn-removebg-preview.png" alt="linkedin" style="border-width: 0px;"></a>
+            </div>
+          </div>
+      <div class="footer">
+        <h2>Footer</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="contactInformation.html">Contact</a>
+      </div>
